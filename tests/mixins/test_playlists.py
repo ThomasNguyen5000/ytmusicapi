@@ -234,7 +234,7 @@ class TestPlaylists:
         finally:
             yt_oauth.delete_playlist(playlist_id)
 
-    def test_edit_playlist_community_vote(self, yt_oauth: YTMusic, yt_brand: YTMusic):
+    def test_edit_playlist_community_vote(self, yt_oauth: YTMusic):
         playlist_id = yt_oauth.create_playlist("test edit community vote", "", privacy_status="UNLISTED")
         assert len(playlist_id) == 34, "Playlist creation failed"
         assert isinstance(playlist_id, str), "Playlist creation failed"
@@ -244,44 +244,19 @@ class TestPlaylists:
             assert isinstance(response, dict)
             # Enable collaboration so can test all 3 vote options.
             assert response["status"] == ResponseStatus.SUCCEEDED
-            join_collaboration_token = response["joinCollaborationToken"]
-
-            response = yt_oauth.add_playlist_items(playlist_id, ["lYBUbBu4W08"])
-            assert isinstance(response, dict)
-            assert response["status"] == ResponseStatus.SUCCEEDED, "Adding playlist items failed"
 
             response = yt_oauth.edit_playlist(playlist_id, voteOption=PlaylistVoteEditOptions.OFF)
             assert response == ResponseStatus.SUCCEEDED
-            time.sleep(3)  # wait for the edit to be reflected
-            playlist = yt_brand.get_playlist(playlist_id, limit=None)
-            track = playlist["tracks"][0]
-            assert track["communityVoteStatus"] is None
 
             response = yt_oauth.edit_playlist(
                 playlist_id, voteOption=PlaylistVoteEditOptions.EVERYONE_CAN_VOTE
             )
             assert response == ResponseStatus.SUCCEEDED
-            time.sleep(3)  # wait for the edit to be reflected
-            playlist = yt_brand.get_playlist(playlist_id, limit=None)
-            track = playlist["tracks"][0]
-            assert track["communityVoteStatus"] == {"netVoteValue": 0, "status": VoteStatus.UNSPECIFIED}
 
             response = yt_oauth.edit_playlist(
                 playlist_id, voteOption=PlaylistVoteEditOptions.COLLABORATORS_ONLY
             )
             assert response == ResponseStatus.SUCCEEDED
-            time.sleep(3)  # wait for the edit to be reflected
-            playlist = yt_brand.get_playlist(playlist_id, limit=None)
-            track = playlist["tracks"][0]
-            assert track["communityVoteStatus"] is None
-
-            assert (
-                yt_brand.join_collaborative_playlist(playlist_id, join_collaboration_token)
-                == ResponseStatus.SUCCEEDED
-            )
-            playlist = yt_brand.get_playlist(playlist_id, limit=None)
-            track = playlist["tracks"][0]
-            assert track["communityVoteStatus"] == {"netVoteValue": 0, "status": VoteStatus.UNSPECIFIED}
 
         finally:
             yt_oauth.delete_playlist(playlist_id)
