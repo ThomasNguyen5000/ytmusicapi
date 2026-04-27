@@ -38,7 +38,7 @@ class VoteStatus(str, Enum):
     UNSPECIFIED = "VOTE_STATUS_UNSPECIFIED"
 
 
-class PlaylistVoteEditOptions(Enum):
+class PlaylistVoteEditOptions(str, Enum):
     EVERYONE_CAN_VOTE = "EVERYONE_CAN_VOTE"
     # only available for playlists where collaborate is on.
     COLLABORATORS_ONLY = "COLLABORATORS_ONLY"
