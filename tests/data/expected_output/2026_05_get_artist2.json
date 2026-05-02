@@ -1,5 +1,6 @@
 {
-  "description": [
+  "description": "Hoshimachi Suisei is a Japanese singer, songwriter, and virtual YouTuber. She began posting videos as an independent creator in March 2018. In May 2019, she became affiliated with Hololive Production through their newly created music label, INoNaKa Music, before joining the agency's main branch later the same year. Her YouTube activity consists primarily of live streaming herself singing karaoke, playing video games, talking to her fans, or collaborating with other talents. She is particularly well known among fans for her skill at Tetris and her singing ability. As of February 2026, she has 2.83 million subscribers and 1.59 billion views on YouTube.\nAs a singer, she released a digital single \"Next Color Planet\" in March 2020, which peaked at 5th on the Oricon daily digital single ranking, and another, \"Ghost\", in April 2021, which peaked at 1st. Additionally, her first album, Still Still Stellar, was released on 29 September 2021, and peaked at 5th on the Oricon daily album ranking, the highest ever solo VTuber album performance. Outside of her streaming and musical activity, she has appeared on Japanese television and radio programs as a virtual personality.\n\nFrom Wikipedia (https://en.wikipedia.org/wiki/Hoshima...) under Creative Commons Attribution CC-BY-SA 3.0 (http://creativecommons.org/licenses/b...)",
+  "descriptionRuns": [
     {
       "text": "Hoshimachi Suisei is a Japanese singer, songwriter, and virtual YouTuber. She began posting videos as an independent creator in March 2018. In May 2019, she became affiliated with Hololive Production through their newly created music label, INoNaKa Music, before joining the agency's main branch later the same year. Her YouTube activity consists primarily of live streaming herself singing karaoke, playing video games, talking to her fans, or collaborating with other talents. She is particularly well known among fans for her skill at Tetris and her singing ability. As of February 2026, she has 2.83 million subscribers and 1.59 billion views on YouTube.\nAs a singer, she released a digital single \"Next Color Planet\" in March 2020, which peaked at 5th on the Oricon daily digital single ranking, and another, \"Ghost\", in April 2021, which peaked at 1st. Additionally, her first album, Still Still Stellar, was released on 29 September 2021, and peaked at 5th on the Oricon daily album ranking, the highest ever solo VTuber album performance. Outside of her streaming and musical activity, she has appeared on Japanese television and radio programs as a virtual personality.\n\nFrom Wikipedia ("
     },
@@ -18,13 +19,13 @@
       "text": ")"
     }
   ],
-  "views": "1,633,447,893 views",
+  "views": "1,640,197,889 views",
   "name": "Hoshimachi Suisei",
   "channelId": "UC5CwaMl1eIgY8h02uZw7u8A",
   "shuffleId": "RDAO4pGYYhMejrWrWlG15Cuxdw",
   "radioId": null,
-  "subscribers": "2.87M",
-  "monthlyListeners": "10.9M",
+  "subscribers": "2.88M",
+  "monthlyListeners": "9.84M",
   "subscribed": false,
   "thumbnails": [
     {
@@ -74,12 +75,12 @@
         "pinnedToListenAgain": false,
         "thumbnails": [
           {
-            "url": "https://lh3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w60-h60-l90-rj",
+            "url": "https://yt3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w60-h60-l90-rj",
             "width": 60,
             "height": 60
           },
           {
-            "url": "https://lh3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w120-h120-l90-rj",
+            "url": "https://yt3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w120-h120-l90-rj",
             "width": 120,
             "height": 120
           }
@@ -140,12 +141,45 @@
         "pinnedToListenAgain": false,
         "thumbnails": [
           {
-            "url": "https://lh3.googleusercontent.com/0X9P01tGV93yth14Y3bO3OgX_1PEUtwJTaE7DPefBQ4gpj7g5022-TiY7kptXzVfDL6w273DPCQrN-Atcw=w60-h60-l90-rj",
+            "url": "https://yt3.googleusercontent.com/0X9P01tGV93yth14Y3bO3OgX_1PEUtwJTaE7DPefBQ4gpj7g5022-TiY7kptXzVfDL6w273DPCQrN-Atcw=w60-h60-l90-rj",
             "width": 60,
             "height": 60
           },
           {
-            "url": "https://lh3.googleusercontent.com/0X9P01tGV93yth14Y3bO3OgX_1PEUtwJTaE7DPefBQ4gpj7g5022-TiY7kptXzVfDL6w273DPCQrN-Atcw=w120-h120-l90-rj",
+            "url": "https://yt3.googleusercontent.com/0X9P01tGV93yth14Y3bO3OgX_1PEUtwJTaE7DPefBQ4gpj7g5022-TiY7kptXzVfDL6w273DPCQrN-Atcw=w120-h120-l90-rj",
+            "width": 120,
+            "height": 120
+          }
+        ],
+        "isAvailable": true,
+        "isExplicit": false,
+        "videoType": "MUSIC_VIDEO_TYPE_ATV",
+        "views": null
+      },
+      {
+        "videoId": "_uLrBj7_LJ4",
+        "title": "Caramel pain",
+        "artists": [
+          {
+            "name": "Hoshimachi Suisei",
+            "id": "UCrzT1p8gn0hQTBeMA6e2YiA"
+          }
+        ],
+        "album": {
+          "name": "SHINSEI MOKUROKU",
+          "id": "MPREb_Ydw7YWlDHV3"
+        },
+        "likeStatus": "INDIFFERENT",
+        "inLibrary": false,
+        "pinnedToListenAgain": false,
+        "thumbnails": [
+          {
+            "url": "https://yt3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w60-h60-l90-rj",
+            "width": 60,
+            "height": 60
+          },
+          {
+            "url": "https://yt3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w120-h120-l90-rj",
             "width": 120,
             "height": 120
           }
@@ -191,39 +225,6 @@
         "isExplicit": false,
         "videoType": "MUSIC_VIDEO_TYPE_ATV",
         "views": null
-      },
-      {
-        "videoId": "_uLrBj7_LJ4",
-        "title": "Caramel pain",
-        "artists": [
-          {
-            "name": "Hoshimachi Suisei",
-            "id": "UCrzT1p8gn0hQTBeMA6e2YiA"
-          }
-        ],
-        "album": {
-          "name": "SHINSEI MOKUROKU",
-          "id": "MPREb_Ydw7YWlDHV3"
-        },
-        "likeStatus": "INDIFFERENT",
-        "inLibrary": false,
-        "pinnedToListenAgain": false,
-        "thumbnails": [
-          {
-            "url": "https://lh3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w60-h60-l90-rj",
-            "width": 60,
-            "height": 60
-          },
-          {
-            "url": "https://lh3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w120-h120-l90-rj",
-            "width": 120,
-            "height": 120
-          }
-        ],
-        "isAvailable": true,
-        "isExplicit": false,
-        "videoType": "MUSIC_VIDEO_TYPE_ATV",
-        "views": null
       }
     ]
   },
@@ -238,12 +239,12 @@
         "audioPlaylistId": "OLAK5uy_kxX1FAi8Mj4tekntQwaAIZs_Dh3BesR7o",
         "thumbnails": [
           {
-            "url": "https://lh3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w226-h226-l90-rj",
+            "url": "https://yt3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w226-h226-l90-rj",
             "width": 226,
             "height": 226
           },
           {
-            "url": "https://lh3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w544-h544-l90-rj",
+            "url": "https://yt3.googleusercontent.com/HhyPWqVSNtEXfbqA8t0AJw28bk5-NKW220uMO0v2ptNoKWBbBZvuf-3hCUZrjpLYL5q8X28UkXmcViBw=w544-h544-l90-rj",
             "width": 544,
             "height": 544
           }
@@ -335,12 +336,12 @@
         "browseId": "MPREb_Qp1eSrNBxZX",
         "thumbnails": [
           {
-            "url": "https://lh3.googleusercontent.com/vsVsxho1fafGzhjFJ9z05AoCT41WyDDrX2hBFOh9vhqSqt7SaM7LcGtiYj0rxKCrsjnaqqRs6Ka50EqI3A=w226-h226-l90-rj",
+            "url": "https://yt3.googleusercontent.com/vsVsxho1fafGzhjFJ9z05AoCT41WyDDrX2hBFOh9vhqSqt7SaM7LcGtiYj0rxKCrsjnaqqRs6Ka50EqI3A=w226-h226-l90-rj",
             "width": 226,
             "height": 226
           },
           {
-            "url": "https://lh3.googleusercontent.com/vsVsxho1fafGzhjFJ9z05AoCT41WyDDrX2hBFOh9vhqSqt7SaM7LcGtiYj0rxKCrsjnaqqRs6Ka50EqI3A=w544-h544-l90-rj",
+            "url": "https://yt3.googleusercontent.com/vsVsxho1fafGzhjFJ9z05AoCT41WyDDrX2hBFOh9vhqSqt7SaM7LcGtiYj0rxKCrsjnaqqRs6Ka50EqI3A=w544-h544-l90-rj",
             "width": 544,
             "height": 544
           }
@@ -352,12 +353,12 @@
         "browseId": "MPREb_6CBYXg4bmAC",
         "thumbnails": [
           {
-            "url": "https://lh3.googleusercontent.com/MQ5eUZdT5AOJJSEreh6DU4Z4Cigu7KoO3JhGs8A_gSTjwggWebaUO7st6HH3zYkawDP7TddZHGw7kZQs=w226-h226-l90-rj",
+            "url": "https://yt3.googleusercontent.com/MQ5eUZdT5AOJJSEreh6DU4Z4Cigu7KoO3JhGs8A_gSTjwggWebaUO7st6HH3zYkawDP7TddZHGw7kZQs=w226-h226-l90-rj",
             "width": 226,
             "height": 226
           },
           {
-            "url": "https://lh3.googleusercontent.com/MQ5eUZdT5AOJJSEreh6DU4Z4Cigu7KoO3JhGs8A_gSTjwggWebaUO7st6HH3zYkawDP7TddZHGw7kZQs=w544-h544-l90-rj",
+            "url": "https://yt3.googleusercontent.com/MQ5eUZdT5AOJJSEreh6DU4Z4Cigu7KoO3JhGs8A_gSTjwggWebaUO7st6HH3zYkawDP7TddZHGw7kZQs=w544-h544-l90-rj",
             "width": 544,
             "height": 544
           }
@@ -403,12 +404,12 @@
         "browseId": "MPREb_G5irNG6pTIF",
         "thumbnails": [
           {
-            "url": "https://lh3.googleusercontent.com/b7B2sZ_KQQ5qAnO75uS82kHONDoCc6UbVDL8WSQSrjqG0Hhw3CHxnje2LPhkd7zM5P81OF_pHogvsjej=w226-h226-l90-rj",
+            "url": "https://yt3.googleusercontent.com/b7B2sZ_KQQ5qAnO75uS82kHONDoCc6UbVDL8WSQSrjqG0Hhw3CHxnje2LPhkd7zM5P81OF_pHogvsjej=w226-h226-l90-rj",
             "width": 226,
             "height": 226
           },
           {
-            "url": "https://lh3.googleusercontent.com/b7B2sZ_KQQ5qAnO75uS82kHONDoCc6UbVDL8WSQSrjqG0Hhw3CHxnje2LPhkd7zM5P81OF_pHogvsjej=w544-h544-l90-rj",
+            "url": "https://yt3.googleusercontent.com/b7B2sZ_KQQ5qAnO75uS82kHONDoCc6UbVDL8WSQSrjqG0Hhw3CHxnje2LPhkd7zM5P81OF_pHogvsjej=w544-h544-l90-rj",
             "width": 544,
             "height": 544
           }
@@ -420,12 +421,12 @@
         "browseId": "MPREb_nd1ERzORFii",
         "thumbnails": [
           {
-            "url": "https://lh3.googleusercontent.com/0X9P01tGV93yth14Y3bO3OgX_1PEUtwJTaE7DPefBQ4gpj7g5022-TiY7kptXzVfDL6w273DPCQrN-Atcw=w226-h226-l90-rj",
+            "url": "https://yt3.googleusercontent.com/0X9P01tGV93yth14Y3bO3OgX_1PEUtwJTaE7DPefBQ4gpj7g5022-TiY7kptXzVfDL6w273DPCQrN-Atcw=w226-h226-l90-rj",
             "width": 226,
             "height": 226
           },
           {
-            "url": "https://lh3.googleusercontent.com/0X9P01tGV93yth14Y3bO3OgX_1PEUtwJTaE7DPefBQ4gpj7g5022-TiY7kptXzVfDL6w273DPCQrN-Atcw=w544-h544-l90-rj",
+            "url": "https://yt3.googleusercontent.com/0X9P01tGV93yth14Y3bO3OgX_1PEUtwJTaE7DPefBQ4gpj7g5022-TiY7kptXzVfDL6w273DPCQrN-Atcw=w544-h544-l90-rj",
             "width": 544,
             "height": 544
           }
@@ -437,12 +438,12 @@
         "browseId": "MPREb_HpKxVAnjgqW",
         "thumbnails": [
           {
-            "url": "https://lh3.googleusercontent.com/fC3-NYzEmoHYhVCR5o0V8_hr4lLgXgVbsk5bn15zGPKnKFAIxNRdkQZo-zjjM_yvacB63DXWXoRf7uKVJw=w226-h226-l90-rj",
+            "url": "https://yt3.googleusercontent.com/fC3-NYzEmoHYhVCR5o0V8_hr4lLgXgVbsk5bn15zGPKnKFAIxNRdkQZo-zjjM_yvacB63DXWXoRf7uKVJw=w226-h226-l90-rj",
             "width": 226,
             "height": 226
           },
           {
-            "url": "https://lh3.googleusercontent.com/fC3-NYzEmoHYhVCR5o0V8_hr4lLgXgVbsk5bn15zGPKnKFAIxNRdkQZo-zjjM_yvacB63DXWXoRf7uKVJw=w544-h544-l90-rj",
+            "url": "https://yt3.googleusercontent.com/fC3-NYzEmoHYhVCR5o0V8_hr4lLgXgVbsk5bn15zGPKnKFAIxNRdkQZo-zjjM_yvacB63DXWXoRf7uKVJw=w544-h544-l90-rj",
             "width": 544,
             "height": 544
           }
@@ -472,8 +473,8 @@
     "browseId": "VLOLAK5uy_m2AKAq2QbZgHRk150fMfD8XWDQVpGMjDk",
     "results": [
       {
-        "title": "BEEP BEEP",
-        "videoId": "kPqmld3_lSs",
+        "title": "\"BEEP BEEP\" Dance Practice ver. / Hoshimatic Project (official)",
+        "videoId": "__p5CB8_J50",
         "artists": [
           {
             "name": "Hoshimachi Suisei",
@@ -483,17 +484,17 @@
         "playlistId": "OLAK5uy_m2AKAq2QbZgHRk150fMfD8XWDQVpGMjDk",
         "thumbnails": [
           {
-            "url": "https://i.ytimg.com/vi/kPqmld3_lSs/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg&rs=AMzJL3nNmrTpuFB198YuefSyWUcX5Wbitg",
+            "url": "https://i.ytimg.com/vi/__p5CB8_J50/sddefault.jpg?sqp=-oaymwEWCJADEOEBIAQqCghqEJQEGHgg6AJIWg&rs=AMzJL3mvzBBEK7quJsWXuqRaGwvOSs9Dfw",
             "width": 400,
             "height": 225
           },
           {
-            "url": "https://i.ytimg.com/vi/kPqmld3_lSs/hq720.jpg?sqp=-oaymwEXCKAGEMIDIAQqCwjVARCqCBh4INgESFo&rs=AMzJL3keACX0U_RQlHc5tN5znZxCUFkTcA",
+            "url": "https://i.ytimg.com/vi/__p5CB8_J50/hq720.jpg?sqp=-oaymwEXCKAGEMIDIAQqCwjVARCqCBh4INgESFo&rs=AMzJL3n4_doCpfP3D8mpz4eJni77y3zZYQ",
             "width": 800,
             "height": 450
           }
         ],
-        "views": "748K"
+        "views": "159K"
       },
       {
         "title": "プリマドンナ",
@@ -517,7 +518,7 @@
             "height": 450
           }
         ],
-        "views": "2.5M"
+        "views": "2.7M"
       },
       {
         "title": "ビビデバ - BIBBIDIBA",
@@ -613,7 +614,7 @@
             "height": 450
           }
         ],
-        "views": "2.9M"
+        "views": "3M"
       },
       {
         "title": "ソワレ",
@@ -718,128 +719,9 @@
     "browseId": null,
     "results": [
       {
-        "title": "Minato Aqua ",
-        "browseId": "UCrt_gZvJvAB23gDHjW4hMDA",
-        "subscribers": "3.51M",
-        "thumbnails": [
-          {
-            "url": "https://lh3.googleusercontent.com/SVG28OZXtTuhCrMJvc4j608TTdPjMlnXQ9ZSUwzAIN7_uEZV1FVlr9gYmVQ5ztodVoY82LFCGqVrYMot=w226-h226-p-l90-rj",
-            "width": 226,
-            "height": 226
-          },
-          {
-            "url": "https://lh3.googleusercontent.com/SVG28OZXtTuhCrMJvc4j608TTdPjMlnXQ9ZSUwzAIN7_uEZV1FVlr9gYmVQ5ztodVoY82LFCGqVrYMot=w544-h544-p-l90-rj",
-            "width": 544,
-            "height": 544
-          }
-        ]
-      },
-      {
-        "title": "Ui Shigure",
-        "browseId": "UCU8RtL_Y0DhYBOoPBYaNV5A",
-        "subscribers": "5.19M",
-        "thumbnails": [
-          {
-            "url": "https://lh3.googleusercontent.com/a-/ALV-UjVq6jJ-85tnq6xCjRMGbgERxGqP-ntqcw_w43AyeRuwjooyFzXD=w226-h226-l90-rj",
-            "width": 226,
-            "height": 226
-          },
-          {
-            "url": "https://lh3.googleusercontent.com/a-/ALV-UjVq6jJ-85tnq6xCjRMGbgERxGqP-ntqcw_w43AyeRuwjooyFzXD=w544-h544-l90-rj",
-            "width": 544,
-            "height": 544
-          }
-        ]
-      },
-      {
-        "title": "Shirakami Fubuki",
-        "browseId": "UCYOX2W_9yOSgG_KTJLwCepQ",
-        "subscribers": "24.5K",
-        "thumbnails": [
-          {
-            "url": "https://lh3.googleusercontent.com/E5l88ekLcI-TgHb1k_qvmj2ZDswGgGB35J_E5kkXaMoC4LmwONkeX3bb9v87u3rhovaufDzMuSTiyVk=w226-h226-p-l90-rj",
-            "width": 226,
-            "height": 226
-          },
-          {
-            "url": "https://lh3.googleusercontent.com/E5l88ekLcI-TgHb1k_qvmj2ZDswGgGB35J_E5kkXaMoC4LmwONkeX3bb9v87u3rhovaufDzMuSTiyVk=w544-h544-p-l90-rj",
-            "width": 544,
-            "height": 544
-          }
-        ]
-      },
-      {
-        "title": "Amane Kanata",
-        "browseId": "UCPCiIrrrNJOKvi_5vr3G6PA",
-        "subscribers": "1.61M",
-        "thumbnails": [
-          {
-            "url": "https://lh3.googleusercontent.com/lPBVM50_eAFcTsYpD1kYHaOVefYc7KBMS9sswjEjtSrKH6XL5gMxjuU2WshcMzo-dG79VzZKW-7lh4vM=w226-h226-p-l90-rj",
-            "width": 226,
-            "height": 226
-          },
-          {
-            "url": "https://lh3.googleusercontent.com/lPBVM50_eAFcTsYpD1kYHaOVefYc7KBMS9sswjEjtSrKH6XL5gMxjuU2WshcMzo-dG79VzZKW-7lh4vM=w544-h544-p-l90-rj",
-            "width": 544,
-            "height": 544
-          }
-        ]
-      },
-      {
-        "title": "Hakos Baelz",
-        "browseId": "UCdxOqA9jmSBN9VidinCL54Q",
-        "subscribers": "2.71M",
-        "thumbnails": [
-          {
-            "url": "https://yt3.googleusercontent.com/FTzbjJETtCZet9RArreMxlfWobcr7nH4rGqV88YZDfPkQk5TUlqMBB-bhve2SG-5DTnwU-9BogsZUNYt=w226-h226-l90-rj",
-            "width": 226,
-            "height": 226
-          },
-          {
-            "url": "https://yt3.googleusercontent.com/FTzbjJETtCZet9RArreMxlfWobcr7nH4rGqV88YZDfPkQk5TUlqMBB-bhve2SG-5DTnwU-9BogsZUNYt=w544-h544-l90-rj",
-            "width": 544,
-            "height": 544
-          }
-        ]
-      },
-      {
-        "title": "ReGLOSS",
-        "browseId": "UCXhBruH4SzsyGe1pNHMYceQ",
-        "subscribers": "13.6M",
-        "thumbnails": [
-          {
-            "url": "https://yt3.googleusercontent.com/bxCE5tajrCD-Gt3XL40LWfIhgmNC_qql0vjVrnx8TkDV6GzIPDixKeSYOQySeePJRdAeefGyK9jLuM7m=w226-h226-l90-rj",
-            "width": 226,
-            "height": 226
-          },
-          {
-            "url": "https://yt3.googleusercontent.com/bxCE5tajrCD-Gt3XL40LWfIhgmNC_qql0vjVrnx8TkDV6GzIPDixKeSYOQySeePJRdAeefGyK9jLuM7m=w544-h544-l90-rj",
-            "width": 544,
-            "height": 544
-          }
-        ]
-      },
-      {
-        "title": "Midnight Grand Orchestra",
-        "browseId": "UCEkx8aE2yjitVQ-5lG-xhGQ",
-        "subscribers": "167K",
-        "thumbnails": [
-          {
-            "url": "https://yt3.googleusercontent.com/hrjmp9GuzTgjXvIR9xr_e3z5aarzeFTGQUjT-BYUzNJ8ooxAL8uUbxkhck1Yrg5edTpy3P6irVEbmeWs=w226-h226-p-l90-rj",
-            "width": 226,
-            "height": 226
-          },
-          {
-            "url": "https://yt3.googleusercontent.com/hrjmp9GuzTgjXvIR9xr_e3z5aarzeFTGQUjT-BYUzNJ8ooxAL8uUbxkhck1Yrg5edTpy3P6irVEbmeWs=w544-h544-p-l90-rj",
-            "width": 544,
-            "height": 544
-          }
-        ]
-      },
-      {
         "title": "Tsunomaki Watame",
         "browseId": "UCX2NCyh8ipCoydn1iKWyM_Q",
-        "subscribers": "1.85M",
+        "subscribers": "1.67M",
         "thumbnails": [
           {
             "url": "https://lh3.googleusercontent.com/wFV6KpyFTIZyFVc51ueQeFkJC3NsVXBpj5PmBwGFvmi7iTsY92e4FVyiuVk9Nai5fdUYK7Pqmf-lsQ=w226-h226-p-l90-rj",
@@ -854,9 +736,43 @@
         ]
       },
       {
+        "title": "Midnight Grand Orchestra",
+        "browseId": "UCEkx8aE2yjitVQ-5lG-xhGQ",
+        "subscribers": "149K",
+        "thumbnails": [
+          {
+            "url": "https://yt3.googleusercontent.com/hrjmp9GuzTgjXvIR9xr_e3z5aarzeFTGQUjT-BYUzNJ8ooxAL8uUbxkhck1Yrg5edTpy3P6irVEbmeWs=w226-h226-p-l90-rj",
+            "width": 226,
+            "height": 226
+          },
+          {
+            "url": "https://yt3.googleusercontent.com/hrjmp9GuzTgjXvIR9xr_e3z5aarzeFTGQUjT-BYUzNJ8ooxAL8uUbxkhck1Yrg5edTpy3P6irVEbmeWs=w544-h544-p-l90-rj",
+            "width": 544,
+            "height": 544
+          }
+        ]
+      },
+      {
+        "title": "Takane Lui",
+        "browseId": "UCQMgXC391DOrMXY430fAHYQ",
+        "subscribers": "1.37M",
+        "thumbnails": [
+          {
+            "url": "https://yt3.googleusercontent.com/9O6ZERZy5H4cvDUwSCptdryClzdlOaSD5QVNumGhb9RCpqE8Jt22JCrGCYRcSgCs64id3TCJvHerYQcM=w226-h226-l90-rj",
+            "width": 226,
+            "height": 226
+          },
+          {
+            "url": "https://yt3.googleusercontent.com/9O6ZERZy5H4cvDUwSCptdryClzdlOaSD5QVNumGhb9RCpqE8Jt22JCrGCYRcSgCs64id3TCJvHerYQcM=w544-h544-l90-rj",
+            "width": 544,
+            "height": 544
+          }
+        ]
+      },
+      {
         "title": "La+ Darknesss",
         "browseId": "UCd5jlP-h6jXEU0TKFRNdIng",
-        "subscribers": "12.4K",
+        "subscribers": "12.5K",
         "thumbnails": [
           {
             "url": "https://yt3.googleusercontent.com/pk_U0d0YgqJyItmEO0mODY2PqU7qZjQP1fTYPRSuM65H4W2W1yNI6i2sXC7mF5PjNt8e6Mg1driF18pI=w226-h226-p-l90-rj",
@@ -871,9 +787,60 @@
         ]
       },
       {
+        "title": "TOKINOSORA",
+        "browseId": "UCX1VP45sH-XFxNDzXbMeEBg",
+        "subscribers": "1.03M",
+        "thumbnails": [
+          {
+            "url": "https://lh3.googleusercontent.com/a-/ALV-UjXwSnWn9QSNiSl-ObO2YpErAJi2e07E6QIZIIpGdl0DXJtK4JkT=w226-h226-l90-rj",
+            "width": 226,
+            "height": 226
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/a-/ALV-UjXwSnWn9QSNiSl-ObO2YpErAJi2e07E6QIZIIpGdl0DXJtK4JkT=w544-h544-l90-rj",
+            "width": 544,
+            "height": 544
+          }
+        ]
+      },
+      {
+        "title": "Momosuzu Nene",
+        "browseId": "UC1ayhcwJh-N7BJC9MHH-vMQ",
+        "subscribers": "908K",
+        "thumbnails": [
+          {
+            "url": "https://lh3.googleusercontent.com/lp572Nmj92w1jgkOfcQcy7UnH-dT68ZxXLZGGMPF493DNGA_vn2ZKfP5ojaE-TDGjb5YAzejvsg3BkI=w226-h226-p-l90-rj",
+            "width": 226,
+            "height": 226
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/lp572Nmj92w1jgkOfcQcy7UnH-dT68ZxXLZGGMPF493DNGA_vn2ZKfP5ojaE-TDGjb5YAzejvsg3BkI=w544-h544-p-l90-rj",
+            "width": 544,
+            "height": 544
+          }
+        ]
+      },
+      {
+        "title": "Todoroki Hajime",
+        "browseId": "UCc_goqg5cuZSlEK3lJNDFjg",
+        "subscribers": "6.29K",
+        "thumbnails": [
+          {
+            "url": "https://yt3.googleusercontent.com/6bs2Dx0L02TrUHmcpQT5dK9Ho9X0aTIUA1XUbS6yfoK9_OPJQVPLUNJSYVukycHSukAzRjm3ZWl9eBI=w226-h226-l90-rj",
+            "width": 226,
+            "height": 226
+          },
+          {
+            "url": "https://yt3.googleusercontent.com/6bs2Dx0L02TrUHmcpQT5dK9Ho9X0aTIUA1XUbS6yfoK9_OPJQVPLUNJSYVukycHSukAzRjm3ZWl9eBI=w544-h544-l90-rj",
+            "width": 544,
+            "height": 544
+          }
+        ]
+      },
+      {
         "title": "Nakiri Ayame",
         "browseId": "UC2PZFCHAqVuXMGPPNR09K5Q",
-        "subscribers": "19K",
+        "subscribers": "19.1K",
         "thumbnails": [
           {
             "url": "https://lh3.googleusercontent.com/fZBLOLQIMjMAjFPK2DDfrWusNATQhb9sXVQKr8UpeWm2DaAvU7RvC0bsaAHx7wl_qi-GlZcHEDPQ-Q=w226-h226-p-l90-rj",
@@ -882,6 +849,40 @@
           },
           {
             "url": "https://lh3.googleusercontent.com/fZBLOLQIMjMAjFPK2DDfrWusNATQhb9sXVQKr8UpeWm2DaAvU7RvC0bsaAHx7wl_qi-GlZcHEDPQ-Q=w544-h544-p-l90-rj",
+            "width": 544,
+            "height": 544
+          }
+        ]
+      },
+      {
+        "title": "hololive IDOL PROJECT",
+        "browseId": "UCuCfKSM0_23RRXxQGYTVJlw",
+        "subscribers": "93.9K",
+        "thumbnails": [
+          {
+            "url": "https://yt3.googleusercontent.com/eClhqvGlRv_7EUxygkFMyxm3z_3-y6ScvyXi7TQuObgBIemXV5bL9qD9Co_2qNHLPgBkOTiRaSkX-ik=w226-h226-p-l90-rj",
+            "width": 226,
+            "height": 226
+          },
+          {
+            "url": "https://yt3.googleusercontent.com/eClhqvGlRv_7EUxygkFMyxm3z_3-y6ScvyXi7TQuObgBIemXV5bL9qD9Co_2qNHLPgBkOTiRaSkX-ik=w544-h544-p-l90-rj",
+            "width": 544,
+            "height": 544
+          }
+        ]
+      },
+      {
+        "title": "Inugami Korone",
+        "browseId": "UCsfHkc4iFBGmfFGRS8M5YHQ",
+        "subscribers": "8.34K",
+        "thumbnails": [
+          {
+            "url": "https://lh3.googleusercontent.com/MlzuGE7qlAbCSZ23NT44DLWiLMPPAreoaYtvgsHKxvRiYcVFtyouvCMbJy5y31FHtI8EnTYosEnOxhnk=w226-h226-p-l90-rj",
+            "width": 226,
+            "height": 226
+          },
+          {
+            "url": "https://lh3.googleusercontent.com/MlzuGE7qlAbCSZ23NT44DLWiLMPPAreoaYtvgsHKxvRiYcVFtyouvCMbJy5y31FHtI8EnTYosEnOxhnk=w544-h544-p-l90-rj",
             "width": 544,
             "height": 544
           }

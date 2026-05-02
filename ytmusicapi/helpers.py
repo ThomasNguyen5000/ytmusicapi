@@ -103,19 +103,22 @@ def sum_total_duration(item: JsonDict) -> int:
     )
 
 
-def parse_description(descriptionRunsList: Any | None) -> list[TextRun]:
+def parse_description_runs(descriptionRunsList: Any | None) -> tuple[str, list[TextRun]]:
     if not isinstance(descriptionRunsList, list):
-        return []
+        return "", []
 
-    description: list[TextRun] = []
+    description_runs: list[TextRun] = []
+    description = ""
     for run in descriptionRunsList:
+        description += run["text"]
+
         if "navigationEndpoint" in run:
             link = nav(run, ["navigationEndpoint", "urlEndpoint", "url"])
             desc = run["text"]
 
-            description.append({"text": desc, "url": link})
+            description_runs.append({"text": desc, "url": link})
             continue
+        else:
+            description_runs.append({"text": run["text"]})
 
-        description.append({"text": run["text"]})
-
-    return description
+    return description, description_runs
