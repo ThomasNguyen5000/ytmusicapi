@@ -4,13 +4,28 @@ from ytmusicapi.mixins._protocol import MixinProtocol
 from ytmusicapi.parsers.search import *
 from ytmusicapi.type_alias import JsonList, ParseFuncType, RequestFuncType
 
+_SearchFilterType = (
+    Literal["songs"]
+    | Literal["videos"]
+    | Literal["albums"]
+    | Literal["artists"]
+    | Literal["playlists"]
+    | Literal["community_playlists"]
+    | Literal["featured_playlists"]
+    | Literal["profiles"]
+    | Literal["podcasts"]
+    | Literal["episodes"]
+)
+
+_SearchScopeType = Literal["uploads"] | Literal["library"]
+
 
 class SearchMixin(MixinProtocol):
     def search(
         self,
         query: str,
-        filter: str | None = None,
-        scope: str | None = None,
+        filter: _SearchFilterType | None = None,
+        scope: _SearchScopeType | None = None,
         limit: int = 20,
         ignore_spelling: bool = False,
     ) -> JsonList:
@@ -19,7 +34,7 @@ class SearchMixin(MixinProtocol):
         Returns results within the provided category.
 
         :param query: Query string, i.e. 'Oasis Wonderwall'
-        :param filter: Filter for item types. Allowed values: ``songs``, ``videos``, ``albums``, ``artists``, ``playlists``, ``community_playlists``, ``featured_playlists``, ``uploads``.
+        :param filter: Filter for item types. Allowed values: ``songs``, ``videos``, ``albums``, ``artists``, ``playlists``, ``community_playlists``, ``featured_playlists``, ``profiles``, ``podcasts``, ``episodes``.
           Default: Default search, including all types of items.
         :param scope: Search scope. Allowed values: ``library``, ``uploads``.
             Default: Search the public YouTube Music catalogue.
@@ -104,7 +119,9 @@ class SearchMixin(MixinProtocol):
                 "title": "Wonderwall - Oasis",
                 "author": "Tate Henderson",
                 "itemCount": "174"
-              },
+              }
+            itemCount of a playlist can be None as youtube music does not expose that information for search filtered to community playlist.
+              ,
               {
                 "category": "Videos",
                 "resultType": "video",
@@ -137,7 +154,6 @@ class SearchMixin(MixinProtocol):
                 "thumbnails": ...
               }
             ]
-
 
         """
         body = {"query": query}
