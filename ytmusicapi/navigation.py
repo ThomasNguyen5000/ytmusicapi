@@ -102,6 +102,22 @@ TIMESTAMPED_LYRICS = [
     "timedLyricsModel",
     "lyricsData",
 ]
+ENGAGEMENT_BAR = [
+    "engagementBar",
+    "engagementBarViewModel",
+    "actions",
+    0,
+    "votingViewModel",
+    "initialState",
+]
+CREDITS_SECTIONS = [
+    "onResponseReceivedActions",
+    0,
+    "openPopupAction",
+    "popup",
+    "dismissableDialogRenderer",
+    "sections",
+]
 
 
 @overload

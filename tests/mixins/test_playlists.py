@@ -8,6 +8,7 @@ from ytmusicapi import YTMusic
 from ytmusicapi.constants import SUPPORTED_LANGUAGES
 from ytmusicapi.enums import ResponseStatus
 from ytmusicapi.exceptions import YTMusicUserError
+from ytmusicapi.models.content.enums import PlaylistSortOrder, PlaylistVoteEditOptions, VoteStatus
 
 
 class TestPlaylists:
@@ -47,13 +48,17 @@ class TestPlaylists:
                 if track["videoType"] == "MUSIC_VIDEO_TYPE_ATV":
                     assert isinstance(track["album"]["name"], str) and track["album"]["name"]
 
+                if (vote_status := track["communityVoteStatus"]) is not None:
+                    assert isinstance(vote_status["netVoteValue"], int)
+                    assert vote_status["status"] in VoteStatus
+
     @pytest.mark.parametrize(
         "playlist_id, tracks_len, related_len",
         [
             ("RDCLAK5uy_nfjzC9YC1NVPPZHvdoAtKVBOILMDOuxOs", 200, 10),
             ("PLj4BSJLnVpNyIjbCWXWNAmybc97FXLlTk", 200, 0),  # no related tracks
             ("PL6bPxvf5dW5clc3y9wAoslzqUrmkZ5c-u", 1000, 10),  # very large
-            # TODO: add playlist with track duration > 1k hours
+            ("PLf6FAPI9j8OOAwvsj_FdO5tyd0GcPLnkm", 200, 0),  # track duration > 1k hours
         ],
     )
     def test_get_playlist_foreign(self, yt_oauth, playlist_id, tracks_len, related_len):
@@ -116,6 +121,45 @@ class TestPlaylists:
         assert len(playlist["related"]) == 10
         assert playlist["owned"] is True
 
+    @pytest.mark.parametrize(
+        "playlist_id, has_vote",
+        [
+            # Settings:
+            # Title: "Playlist with votes"
+            # Description: ""
+            # Privacy: unlisted
+            # Voting: Everyone
+            # Collaboration: On
+            # Allow new collaborators: Off
+            # 2 videos with id: HDTvoFuHtN0, QD3vEctbWGg
+            ("PLa90Y86mjW3fKMrV_EPZ2-WZH8a50ss-b", True),
+            # Settings:
+            # Title: "Playlist without votes"
+            # Description: ""
+            # Privacy: unlisted
+            # Voting: Voting off
+            # Collaboration: On
+            # Allow new collaborators: Off
+            # 2 videos with id: HDTvoFuHtN0, QD3vEctbWGg
+            ("PLa90Y86mjW3d57WTbI8aBp6Cgx9MHOuHD", False),
+        ],
+    )
+    def test_get_playlist_with_votes(self, yt_oauth: YTMusic, playlist_id: str, has_vote: bool):
+        playlist = yt_oauth.get_playlist(playlist_id)
+        tracks = playlist["tracks"]
+        assert len(tracks) > 0
+
+        if not has_vote:
+            for track in tracks:
+                assert track["communityVoteStatus"] is None
+
+            return
+
+        for track in tracks:
+            assert (vote_status := track["communityVoteStatus"]) is not None
+            assert isinstance(vote_status["netVoteValue"], int)
+            assert vote_status["status"] in VoteStatus
+
     def test_edit_playlist(self, config, yt_brand):
         playlist = yt_brand.get_playlist(config["playlists"]["own"])
         response1 = yt_brand.edit_playlist(
@@ -148,6 +192,72 @@ class TestPlaylists:
             moveItem=playlist["tracks"][0]["setVideoId"],
         )
         assert response3 == "STATUS_SUCCEEDED", "Playlist edit 3 failed"
+
+    def test_edit_playlist_collaboration(self, yt_oauth, yt_brand):
+        playlist_id = yt_oauth.create_playlist("test collaboration", "", privacy_status="UNLISTED")
+        assert len(playlist_id) == 34, "Playlist creation failed"
+
+        try:
+            response = yt_oauth.edit_playlist(
+                playlist_id, collaboration=True, sortOrder=PlaylistSortOrder.TOP_VOTED
+            )
+            assert response["status"] == ResponseStatus.SUCCEEDED
+            join_collaboration_token = response["joinCollaborationToken"]
+
+            TRACK_COUNT = 101
+            response = yt_oauth.add_playlist_items(
+                playlist_id, ["lYBUbBu4W08"] * TRACK_COUNT, duplicates=True
+            )
+            assert response["status"] == ResponseStatus.SUCCEEDED, "Adding playlist items failed"
+
+            time.sleep(15)  # wait for collaboration to be enabled
+            assert (
+                yt_brand.join_collaborative_playlist(playlist_id, join_collaboration_token)
+                == ResponseStatus.SUCCEEDED
+            )
+
+            playlist = yt_oauth.get_playlist(playlist_id, limit=None)
+            assert len(playlist["collaborators"]["avatars"]) == 2
+            assert "author" not in playlist
+
+            # we should have continuations for large vote-sorted playlists
+            assert len(playlist["tracks"]) == TRACK_COUNT
+
+            assert yt_oauth.edit_playlist(playlist_id, collaboration=False) == ResponseStatus.SUCCEEDED
+            time.sleep(3)
+
+            playlist = yt_oauth.get_playlist(playlist_id)
+            assert "collaborators" not in playlist
+            assert playlist["author"]
+        finally:
+            yt_oauth.delete_playlist(playlist_id)
+
+    def test_edit_playlist_community_vote(self, yt_oauth: YTMusic):
+        playlist_id = yt_oauth.create_playlist("test edit community vote", "", privacy_status="UNLISTED")
+        assert len(playlist_id) == 34, "Playlist creation failed"
+        assert isinstance(playlist_id, str), "Playlist creation failed"
+
+        try:
+            response = yt_oauth.edit_playlist(playlist_id, collaboration=True)
+            assert isinstance(response, dict)
+            # Enable collaboration so can test all 3 vote options.
+            assert response["status"] == ResponseStatus.SUCCEEDED
+
+            response = yt_oauth.edit_playlist(playlist_id, voteOption=PlaylistVoteEditOptions.OFF)
+            assert response == ResponseStatus.SUCCEEDED
+
+            response = yt_oauth.edit_playlist(
+                playlist_id, voteOption=PlaylistVoteEditOptions.EVERYONE_CAN_VOTE
+            )
+            assert response == ResponseStatus.SUCCEEDED
+
+            response = yt_oauth.edit_playlist(
+                playlist_id, voteOption=PlaylistVoteEditOptions.COLLABORATORS_ONLY
+            )
+            assert response == ResponseStatus.SUCCEEDED
+
+        finally:
+            yt_oauth.delete_playlist(playlist_id)
 
     def test_create_playlist_invalid_title(self, yt_brand):
         with pytest.raises(YTMusicUserError, match="invalid characters"):
