@@ -224,9 +224,9 @@ class SearchMixin(MixinProtocol):
             return search_results
 
         # set filter for parser
-        internal_filter: str | None = None
+        internal_filter: str | None = filter
         result_type = None
-        if filter and "playlists" in filter:
+        if internal_filter and "playlists" in internal_filter:
             internal_filter = "playlists"
         elif scope == scopes[1]:  # uploads
             internal_filter = scopes[1]
