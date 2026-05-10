@@ -32,7 +32,7 @@ class TestBrowsing:
 
     def test_get_artist(self, yt):
         results = yt.get_artist("MPLAUCmMUZbaYdNH0bEd1PAlAqsA")
-        assert len(results) == 17
+        assert len(results) == 18
         assert results["shuffleId"] is not None
         assert results["radioId"] is not None
 
@@ -148,7 +148,7 @@ class TestBrowsing:
             album = yt.get_album("MPREabc")
             assert len(album["tracks"]) == 19
             assert len(album["artists"]) == 1
-            assert len(album) == 14
+            assert len(album) == 15
             for track in album["tracks"]:
                 assert isinstance(track["title"], str) and track["title"]
                 assert len(track["artists"]) > 0
